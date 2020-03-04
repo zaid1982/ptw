@@ -1,0 +1,53 @@
+<div class="modal fade" id="modal_skim_sah" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info mt-3 pt-3 mb-5" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header d-flex justify-content-center">
+                <h4 class="text-white mt-2 ml-2"><i class="fas fa-edit text-white"></i> &nbsp;Maklumat Skim Sah</h4>
+                <button type="button" class="close waves-effect waves-light mr-0 text-white pt-4" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <form id="formMss">
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMssKod" class="form-control">
+                        <label for="txtMssKod" id="lblMssKod">Kod *</label>
+                        <p class="font-small text-danger" id="txtMssKodErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMssDiskripsi" class="form-control">
+                        <label for="txtMssDiskripsi" id="lblMssDiskripsi">Diskripsi *</label>
+                        <p class="font-small text-danger" id="txtMssDiskripsiErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMssKumpPkhidmatJkk" class="form-control">
+                        <label for="txtMssKumpPkhidmatJkk" id="lblMssKumpPkhidmatJkk">Kumpulan Perkhidmatan JKK</label>
+                        <p class="font-small text-danger" id="txtMssKumpPkhidmatJkkErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMssAgensi" class="form-control">
+                        <label for="txtMssAgensi" id="lblMssAgensi">Agensi</label>
+                        <p class="font-small text-danger" id="txtMssAgensiErr"></p>
+                    </div>
+                    <h6 class="font-small">Bakat:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMssBakatYtStatus" name="chkMssBakatYtStatus" value="Y">
+                        <label class="form-check-label" for="chkMssBakatYtStatus">Ya</label>
+                    </div>
+                    <h6 class="font-small mt-3">Status:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMssSkimSahStatus" name="chkMssSkimSahStatus" value="Y">
+                        <label class="form-check-label" for="chkMssSkimSahStatus">Aktif</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer flex-center">
+                <button class="btn btn-outline-info waves-effect" data-dismiss="modal"><i class="fas fa-undo-alt ml-1"></i> Keluar</button>
+                <button id="btnMssSubmit" class="btn btn-info waves-effect"><i class="far fa-paper-plane ml-1"></i> Hantar</button>
+            </div>
+        </div>
+    </div>
+</div>

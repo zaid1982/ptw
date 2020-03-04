@@ -1,0 +1,63 @@
+<div class="modal fade" id="modal_sukan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info mt-3 pt-3 mb-5" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header d-flex justify-content-center">
+                <h4 class="text-white mt-2 ml-2"><i class="fas fa-edit text-white"></i> &nbsp;Maklumat Sukan</h4>
+                <button type="button" class="close waves-effect waves-light mr-0 text-white pt-4" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <form id="formMsu">
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsuKod" class="form-control">
+                        <label for="txtMsuKod" id="lblMsuKod">Kod *</label>
+                        <p class="font-small text-danger" id="txtMsuKodErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsuDiskripsi" class="form-control">
+                        <label for="txtMsuDiskripsi" id="lblMsuDiskripsi">Diskripsi *</label>
+                        <p class="font-small text-danger" id="txtMsuDiskripsiErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsuKategori" class="form-control">
+                        <label for="txtMsuKategori" id="lblMsuKategori">Kategori</label>
+                        <p class="font-small text-danger" id="txtMsuKategoriErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsuJantina" class="form-control">
+                        <label for="txtMsuJantina" id="lblMsuJantina">Jantina</label>
+                        <p class="font-small text-danger" id="txtMsuJantinaErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsuNilai" class="form-control">
+                        <label for="txtMsuNilai" id="lblMsuNilai">Nilai</label>
+                        <p class="font-small text-danger" id="txtMsuNilaiErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsuNoPemerolehan" class="form-control">
+                        <label for="txtMsuNoPemerolehan" id="lblMsuNoPemerolehan">No Pemerolehan</label>
+                        <p class="font-small text-danger" id="txtMsuNoPemerolehanErr"></p>
+                    </div>
+                    <h6 class="font-small">Gab:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMsuGabYtStatus" name="chkMsuGabYtStatus" value="Y">
+                        <label class="form-check-label" for="chkMsuGabYtStatus">Ya</label>
+                    </div>
+                    <h6 class="font-small mt-3">Status:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMsuSukanStatus" name="chkMsuSukanStatus" value="Y">
+                        <label class="form-check-label" for="chkMsuSukanStatus">Aktif</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer flex-center">
+                <button class="btn btn-outline-info waves-effect" data-dismiss="modal"><i class="fas fa-undo-alt ml-1"></i> Keluar</button>
+                <button id="btnMsuSubmit" class="btn btn-info waves-effect"><i class="far fa-paper-plane ml-1"></i> Hantar</button>
+            </div>
+        </div>
+    </div>
+</div>

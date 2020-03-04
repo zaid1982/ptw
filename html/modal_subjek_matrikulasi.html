@@ -1,0 +1,58 @@
+<div class="modal fade" id="modal_subjek_matrikulasi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info mt-3 pt-3 mb-5" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header d-flex justify-content-center">
+                <h4 class="text-white mt-2 ml-2"><i class="fas fa-edit text-white"></i> &nbsp;Maklumat Subjek Matrikulasi</h4>
+                <button type="button" class="close waves-effect waves-light mr-0 text-white pt-4" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <form id="formMsm">
+                    <div class="md-form md-outline mt-4">
+                        <input type="text" id="txtMsmSubjCode" class="form-control">
+                        <label for="txtMsmSubjCode" id="lblMsmSubjCode">Kod Subjek *</label>
+                        <p class="font-small text-danger" id="txtMsmSubjCodeErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsmSubjName" class="form-control">
+                        <label for="txtMsmSubjName" id="lblMsmSubjName">Nama Subjek *</label>
+                        <p class="font-small text-danger" id="txtMsmSubjNameErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsmSubjCredit" class="form-control">
+                        <label for="txtMsmSubjCredit" id="lblMsmSubjCredit">Kredit Subjek</label>
+                        <p class="font-small text-danger" id="txtMsmSubjCreditErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsmSubjSemester" class="form-control">
+                        <label for="txtMsmSubjSemester" id="lblMsmSubjSemester">Semester *</label>
+                        <p class="font-small text-danger" id="txtMsmSubjSemesterErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsmSubjKira" class="form-control">
+                        <label for="txtMsmSubjKira" id="lblMsmSubjKira">Kategori</label>
+                        <p class="font-small text-danger" id="txtMsmSubjKiraErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMsmSubjSesi" class="form-control">
+                        <label for="txtMsmSubjSesi" id="lblMsmSubjSesi">Sesi</label>
+                        <p class="font-small text-danger" id="txtMsmSubjSesiErr"></p>
+                    </div>
+                    <h6 class="font-small">Status:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMsmSubjekMatrikulasiStatus" name="chkMsmSubjekMatrikulasiStatus" value="Y">
+                        <label class="form-check-label" for="chkMsmSubjekMatrikulasiStatus">Aktif</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer flex-center">
+                <button class="btn btn-outline-info waves-effect" data-dismiss="modal"><i class="fas fa-undo-alt ml-1"></i> Keluar</button>
+                <button id="btnMsmSubmit" class="btn btn-info waves-effect"><i class="far fa-paper-plane ml-1"></i> Hantar</button>
+            </div>
+        </div>
+    </div>
+</div>

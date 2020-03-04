@@ -1,0 +1,60 @@
+<div class="modal fade" id="modal_pusat_td" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info mt-3 pt-3 mb-5" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header d-flex justify-content-center">
+                <h4 class="text-white mt-2 ml-2"><i class="fas fa-edit text-white"></i> &nbsp;Maklumat Pusat Temu Duga</h4>
+                <button type="button" class="close waves-effect waves-light mr-0 text-white pt-4" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <form id="formMpt">
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMptKod" class="form-control">
+                        <label for="txtMptKod" id="lblMptKod">Kod *</label>
+                        <p class="font-small text-danger" id="txtMptKodErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMptDiskripsi" class="form-control">
+                        <label for="txtMptDiskripsi" id="lblMptDiskripsi">Pusat Temu Duga *</label>
+                        <p class="font-small text-danger" id="txtMptDiskripsiErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMptKodPendek" class="form-control">
+                        <label for="txtMptKodPendek" id="lblMptKodPendek">Kod Pendek</label>
+                        <p class="font-small text-danger" id="txtMptKodPendekErr"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 select-outline">
+                            <select id="optMptNegKod" class="mdb-select md-form md-outline colorful-select mt-0 mb-0" data-visible-options="-1"></select>
+                            <label for="optMptNegKod" id="lblMptNegKod">Negeri *</label>
+                            <p class="font-small text-danger" id="optMptNegKodErr"></p>
+                        </div>
+                    </div>
+                    <div class="md-form md-outline mt-2">
+                        <input type="text" id="txtMptKodKpt" class="form-control">
+                        <label for="txtMptKodKpt" id="lblMptKodKpt">Kod Kpt</label>
+                        <p class="font-small text-danger" id="txtMptKodKptErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMptJenisPusat" class="form-control">
+                        <label for="txtMptJenisPusat" id="lblMptJenisPusat">Jenis Pusat</label>
+                        <p class="font-small text-danger" id="txtMptJenisPusatErr"></p>
+                    </div>
+                    <h6 class="font-small">Status:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMptPusatTdStatus" name="chkMptPusatTdStatus" value="Y">
+                        <label class="form-check-label" for="chkMptPusatTdStatus">Aktif</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer flex-center">
+                <button class="btn btn-outline-info waves-effect" data-dismiss="modal"><i class="fas fa-undo-alt ml-1"></i> Keluar</button>
+                <button id="btnMptSubmit" class="btn btn-info waves-effect"><i class="far fa-paper-plane ml-1"></i> Hantar</button>
+            </div>
+        </div>
+    </div>
+</div>

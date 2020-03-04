@@ -1,0 +1,75 @@
+<div class="modal fade" id="modal_pengguna" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info mt-3 pt-3 mb-5" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header d-flex justify-content-center">
+                <h4 class="text-white mt-2 ml-2"><i class="fas fa-user-edit text-white"></i> &nbsp;Maklumat Pengguna Sistem</h4>
+                <button type="button" class="close waves-effect waves-light mr-0 text-white pt-4" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <form id="formMpg">
+                    <div class="md-form md-outline mt-4">
+                        <input type="text" id="txtMpgUserNoKp" class="form-control">
+                        <label for="txtMpgUserNoKp" id="lblMpgUserNoKp">No Kad Pengenalan (ID Pengguna) *</label>
+                        <p class="font-small text-danger" id="txtMpgUserNoKpErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMpgUserFirstName" class="form-control">
+                        <label for="txtMpgUserFirstName" id="lblMpgUserFirstName">Nama Pengguna *</label>
+                        <p class="font-small text-danger" id="txtMpgUserFirstNameErr"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 select-outline">
+                            <select id="optMpgDesignationId" class="mdb-select md-form md-outline colorful-select mt-0 mb-0" data-visible-options="-1"></select>
+                            <label for="optMpgDesignationId" id="lblMpgDesignationId" class="active">Jawatan / Gred *</label>
+                            <p class="font-small text-danger" id="optMpgDesignationIdErr"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 select-outline">
+                            <select id="optMpgDepartmentId" class="mdb-select md-form md-outline colorful-select mt-2 mb-0" data-visible-options="-1"></select>
+                            <label for="optMpgDepartmentId" id="lblMpgDepartmentId" class="active">Bahagian *</label>
+                            <p class="font-small text-danger" id="optMpgDepartmentIdErr"></p>
+                        </div>
+                    </div>
+                    <div class="md-form md-outline mt-2">
+                        <input type="text" id="txtMpgUserContactNo" class="form-control">
+                        <label for="txtMpgUserContactNo" id="lblMpgUserContactNo">No Telefon *</label>
+                        <p class="font-small text-danger" id="txtMpgUserContactNoErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMpgUserEmail" class="form-control">
+                        <label for="txtMpgUserEmail" id="lblMpgUserEmail">Emel *</label>
+                        <p class="font-small text-danger" id="txtMpgUserEmailErr"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 select-outline">
+                            <select id="optMpgRoleId" class="mdb-select md-form md-outline colorful-select mt-0 mb-0" data-visible-options="-1"></select>
+                            <label for="optMpgRoleId" id="lblMpgRoleId" class="active">Peranan *</label>
+                            <p class="font-small text-danger" id="optMpgRoleIdErr"></p>
+                        </div>
+                    </div>
+                    <div class="md-form md-outline mt-2">
+                        <input type="password" id="txtMpgUserPassword" class="form-control" autocomplete="new-password">
+                        <label for="txtMpgUserPassword" id="lblMpgUserPassword">Kata Laluan *</label>
+                        <p class="font-small text-danger" id="txtMpgUserPasswordErr"></p>
+                    </div>
+                    <h6 class="font-small">Status:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMpgUserStatus" name="chkMpgUserStatus" value="1">
+                        <label class="form-check-label" for="chkMpgUserStatus">Aktif</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer flex-center">
+                <button class="btn btn-outline-info waves-effect" data-dismiss="modal"><i class="fas fa-undo-alt ml-1"></i> Keluar</button>
+                <button id="btnMpgSubmit" class="btn btn-info waves-effect"><i class="far fa-paper-plane ml-1"></i> Hantar</button>
+            </div>
+        </div>
+    </div>
+</div>

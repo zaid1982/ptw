@@ -1,0 +1,108 @@
+<div class="modal fade" id="modal_kem_jabatan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info mt-3 pt-3 mb-5" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header d-flex justify-content-center">
+                <h4 class="text-white mt-2 ml-2"><i class="fas fa-edit text-white"></i> &nbsp;Maklumat Kementerian Jabatan</h4>
+                <button type="button" class="close waves-effect waves-light mr-0 text-white pt-4" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <form id="formMkj">
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjKod" class="form-control">
+                        <label for="txtMkjKod" id="lblMkjKod">Kod *</label>
+                        <p class="font-small text-danger" id="txtMkjKodErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjDiskripsi" class="form-control">
+                        <label for="txtMkjDiskripsi" id="lblMkjDiskripsi">Diskripsi *</label>
+                        <p class="font-small text-danger" id="txtMkjDiskripsiErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjAlamat1" class="form-control">
+                        <label for="txtMkjAlamat1" id="lblMkjAlamat1">Alamat 1</label>
+                        <p class="font-small text-danger" id="txtMkjAlamat1Err"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjAlamat2" class="form-control">
+                        <label for="txtMkjAlamat2" id="lblMkjAlamat2">Alamat 2</label>
+                        <p class="font-small text-danger" id="txtMkjAlamat2Err"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjAlamat3" class="form-control">
+                        <label for="txtMkjAlamat3" id="lblMkjAlamat3">Alamat3</label>
+                        <p class="font-small text-danger" id="txtMkjAlamat3Err"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjGelaranKetua" class="form-control">
+                        <label for="txtMkjGelaranKetua" id="lblMkjGelaranKetua">Gelaran Ketua</label>
+                        <p class="font-small text-danger" id="txtMkjGelaranKetuaErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjPoskod" class="form-control">
+                        <label for="txtMkjPoskod" id="lblMkjPoskod">Poskod</label>
+                        <p class="font-small text-danger" id="txtMkjPoskodErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjBandar" class="form-control">
+                        <label for="txtMkjBandar" id="lblMkjBandar">Bandar</label>
+                        <p class="font-small text-danger" id="txtMkjBandarErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjKemKod" class="form-control">
+                        <label for="txtMkjKemKod" id="lblMkjKemKod">Kod Kementerian</label>
+                        <p class="font-small text-danger" id="txtMkjKemKodErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjDiskripsi2" class="form-control">
+                        <label for="txtMkjDiskripsi2" id="lblMkjDiskripsi2">Diskripsi 2</label>
+                        <p class="font-small text-danger" id="txtMkjDiskripsi2Err"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjDiskripsi3" class="form-control">
+                        <label for="txtMkjDiskripsi3" id="lblMkjDiskripsi3">Diskripsi 3</label>
+                        <p class="font-small text-danger" id="txtMkjDiskripsi3Err"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjEmel" class="form-control">
+                        <label for="txtMkjEmel" id="lblMkjEmel">Emel</label>
+                        <p class="font-small text-danger" id="txtMkjEmelErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjNoTel" class="form-control">
+                        <label for="txtMkjNoTel" id="lblMkjNoTel">No Telefon</label>
+                        <p class="font-small text-danger" id="txtMkjNoTelErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjUnitUrusan" class="form-control">
+                        <label for="txtMkjUnitUrusan" id="lblMkjUnitUrusan">Unit Urusan</label>
+                        <p class="font-small text-danger" id="txtMkjUnitUrusanErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMkjNoPemerolehan" class="form-control">
+                        <label for="txtMkjNoPemerolehan" id="lblMkjNoPemerolehan">No Pemerolehan</label>
+                        <p class="font-small text-danger" id="txtMkjNoPemerolehanErr"></p>
+                    </div>
+                    <h6 class="font-small">Gab:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMkjGabYtStatus" name="chkMkjGabYtStatus" value="Y">
+                        <label class="form-check-label" for="chkMkjGabYtStatus">Ya</label>
+                    </div>
+                    <h6 class="font-small">Status:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMkjKemJabatanStatus" name="chkMkjKemJabatanStatus" value="Y">
+                        <label class="form-check-label" for="chkMkjKemJabatanStatus">Aktif</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer flex-center">
+                <button class="btn btn-outline-info waves-effect" data-dismiss="modal"><i class="fas fa-undo-alt ml-1"></i> Keluar</button>
+                <button id="btnMkjSubmit" class="btn btn-info waves-effect"><i class="far fa-paper-plane ml-1"></i> Hantar</button>
+            </div>
+        </div>
+    </div>
+</div>

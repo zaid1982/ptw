@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SPA 9</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- DataTables.net -->
+    <link rel="stylesheet" type="text/css" href="js/vendor/datatables/css/dataTables.bootstrap4.min.css"/>
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+    </style>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body class="fixed-sn light-blue-skin">
+<!--Main Navigation-->
+<header>
+    <!-- Sidebar navigation -->
+    <div class="includeHtml" id="h-nav_left"></div>
+    <!-- Navbar -->
+    <div class="includeHtml" id="h-nav_top"></div>
+</header>
+<!--Main layout-->
+
+<main>
+    <div class="container-fluid">
+        <section class="section mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-cascade cascading-admin-card user-card mt-4 z-depth-4">
+                        <div class="admin-up d-flex justify-content-start">
+                            <i class="fas fa-users-cog rgba-cyan-strong py-4 z-depth-3"></i>
+                            <div class="data">
+                                <h3 class="font-weight-bold dark-grey-text ml-3">Pengurusan Pengguna Sistem</h3>
+                            </div>
+                        </div>
+                        <div class="card-body card-body-cascade mt-4">
+                            <form id="formPpsSearch">
+                                <div class="row">
+                                    <div class="col-md-12 select-outline">
+                                        <select id="optPpsDesignationId" class="mdb-select md-form md-outline colorful-select mt-0" data-visible-options="-1"></select>
+                                        <label for="optPpsDesignationId" id="lblPpsDesignationId" class="active">Jawatan / Gred</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 select-outline">
+                                        <select id="optPpsDepartmentId" class="mdb-select md-form md-outline colorful-select mt-0" data-visible-options="-1"></select>
+                                        <label for="optPpsDepartmentId" id="lblPpsDepartmentId" class="active">Bahagian</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 select-outline">
+                                        <select id="optPpsRoleId" class="mdb-select md-form md-outline colorful-select mt-0" data-visible-options="-1"></select>
+                                        <label for="optPpsRoleId" id="lblPpsRoleId" class="active">Peranan</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" id="btnPpsSearch" class="btn btn-outline-orange btn-rounded waves-effect btn-sm float-right">
+                                <i class="fas fa-search mr-1"></i> Cari
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-cascade narrower z-depth-4">
+                        <div class="view view-cascade gradient-card-header mdb-color lighten-1 narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center z-depth-3">
+                            <div>
+                                <button type="button" id="btnPpsAdd" class="btn btn-outline-white btn-rounded btn-sm px-2 material-tooltip-main" data-toggle="tooltip" data-placement="top" title="Tambah Pengguna Sistem"><i class="fas fa-plus mt-0"></i></button>
+                                <a tabindex="0" role="button" class="btn btn-outline-white btn-rounded btn-sm px-2"
+                                   data-toggle="popover" data-trigger="focus" title="Senarai Pengguna Sistem"
+                                   data-content="Jadual data senarai pengguna sistem yang dikeluarkan dari carian di atas."><i class="fas fa-info mt-0 mx-1"></i></a>
+                                <button type="button" id="btnDtPpsListRefresh" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="tooltip" data-placement="top" title="Refresh data"><i class="fas fa-sync mt-0"></i></button>
+                            </div>
+                            <h6 class="text-white font-weight-500">Senarai Pengguna Sistem</h6>
+                            <div>
+                                <div id="btnDtPpsListExport"></div>
+                            </div>
+                        </div>
+                        <div class="px-4 pb-4">
+                            <form class="form-inline md-form form-sm mt-4 mb-0 pb-0 float-right">
+                                <div class="">
+                                    <i class="fas fa-search mt-2" aria-hidden="true"></i>
+                                    <input type="text" id="txtPpsListSearch" class="form-control form-control-sm" style="width: 250px; max-width:250px">
+                                    <label for="txtPpsListSearch" class="ml-4">Carian</label>
+                                </div>
+                            </form>
+                            <div class="table-responsive">
+                                <table id="dtPpsList" class="table table-hover mb-0 display responsive" cellspacing="0" width="100%">
+                                    <thead>
+                                    <tr class="th-strong">
+                                        <th scope="row" style="max-width: 30px">#</th>
+                                        <th style="width: 10%; text-align: center">No. KP (ID Pengguna)</th>
+                                        <th>Nama Pengguna</th>
+                                        <th style="width: 8%">Jawatan</th>
+                                        <th style="width: 20%; text-align: center">Bahagian</th>
+                                        <th style="width: 24%; text-align: center">Peranan</th>
+                                        <th style="width: 8%">Status</th>
+                                        <th style="width: 44px; min-width: 44px"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="includeHtml" id="h-modal_change_password"></div>
+    <div class="includeHtml" id="h-modal_pengguna"></div>
+    <div class="includeHtml" id="h-modal_confirm_delete"></div>
+</main>
+
+<!-- SCRIPTS -->
+<script type="text/javascript">
+    $('.includeHtml').each(function () {
+        const divId = $(this).attr('id');
+        $('#'+divId).load('html/'+divId.substr(2)+'.html?' + new Date().valueOf());
+    });
+</script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.js"></script>
+<!-- Stepper JavaScript - minified -->
+<script type="text/javascript" src="js/addons-pro/stepper.js"></script>
+<!-- DataTables.net -->
+<script type="text/javascript" src="js/vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/vendor/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="js/vendor/datatables/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="js/vendor/datatables/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="js/vendor/datatables/js/buttons.print.min.js"></script>
+<script type="text/javascript" src="js/vendor/datatables/js/jszip.min.js"></script>
+<script type="text/javascript" src="js/vendor/datatables/js/pdfmake.min.js"></script>
+<script type="text/javascript" src="js/vendor/datatables/js/vfs_fonts.js"></script>
+
+<!--Custom scripts-->
+<script type="text/javascript">
+    document.write('<scr' + 'ipt src="js/common.js?' + new Date().valueOf() + '" type="text/javascript"></scr' + 'ipt>');
+
+    let versionLocal_;
+    let changePasswordClass_;
+    let pengurusanPenggunaClass_;
+    let modalPenggunaClass_;
+    let modalConfirmDelete_;
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        ShowLoader();
+        setTimeout(function () {
+            try {
+                initiatePages();
+                versionLocal_ = mzGetDataVersion();
+                changePasswordClass_ = new ModalChangePassword();
+                modalPenggunaClass_ = new ModalPengguna();
+                pengurusanPenggunaClass_ = new MainPengurusanPengguna();
+                modalConfirmDelete_ = new ModalConfirmDelete();
+
+                const refStatus_ = mzGetLocalArray('spa9_status', versionLocal_, 'statusId');
+                const refDesignation_ = mzGetLocalArray('spa9_designation', versionLocal_, 'designationId');
+                const refDepartment_ = mzGetLocalArray('spa9_department', versionLocal_, 'departmentId');
+                const refRole_ = mzGetLocalArray('spa9_role', versionLocal_, 'roleId');
+
+                modalPenggunaClass_.setClassFrom(pengurusanPenggunaClass_);
+                modalPenggunaClass_.setRefDesignation(refDesignation_);
+                modalPenggunaClass_.setRefDepartment(refDepartment_);
+                modalPenggunaClass_.setRefRole(refRole_);
+                modalPenggunaClass_.init();
+
+                pengurusanPenggunaClass_.setRefStatus(refStatus_);
+                pengurusanPenggunaClass_.setRefDesignation(refDesignation_);
+                pengurusanPenggunaClass_.setRefDepartment(refDepartment_);
+                pengurusanPenggunaClass_.setRefRole(refRole_);
+                pengurusanPenggunaClass_.setModalConfirmDeleteClass(modalConfirmDelete_);
+                pengurusanPenggunaClass_.setModalPenggunaClass(modalPenggunaClass_);
+                pengurusanPenggunaClass_.init();
+            } catch (e) {
+                toastr['error'](e.message, _ALERT_TITLE_ERROR);
+            }
+
+            HideLoader();
+        }, 200);
+    });
+
+    document.write('<scr' + 'ipt src="js/pages/modal_change_password.js?' + new Date().valueOf() + '" type="text/javascript"></scr' + 'ipt>');
+    document.write('<scr' + 'ipt src="js/pages/modal_pengguna.js?' + new Date().valueOf() + '" type="text/javascript"></scr' + 'ipt>');
+    document.write('<scr' + 'ipt src="js/pages/modal_confirm_delete.js?' + new Date().valueOf() + '" type="text/javascript"></scr' + 'ipt>');
+    document.write('<scr' + 'ipt src="js/pages/main_pengurusan_pengguna.js?' + new Date().valueOf() + '" type="text/javascript"></scr' + 'ipt>');
+
+</script>

@@ -1,0 +1,53 @@
+<div class="modal fade" id="modal_mata_pelajaran" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info mt-3 pt-3 mb-5" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header d-flex justify-content-center">
+                <h4 class="text-white mt-2 ml-2"><i class="fas fa-edit text-white"></i> &nbsp;Maklumat Mata Pelajaran</h4>
+                <button type="button" class="close waves-effect waves-light mr-0 text-white pt-4" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <form id="formMmp">
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMmpKod" class="form-control">
+                        <label for="txtMmpKod" id="lblMmpKod">Kod *</label>
+                        <p class="font-small text-danger" id="txtMmpKodErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMmpTkt" class="form-control">
+                        <label for="txtMmpTkt" id="lblMmpTkt">Tingkatan</label>
+                        <p class="font-small text-danger" id="txtMmpTktErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMmpDiskripsi" class="form-control">
+                        <label for="txtMmpDiskripsi" id="lblMmpDiskripsi">Mata Pelajaran *</label>
+                        <p class="font-small text-danger" id="txtMmpDiskripsiErr"></p>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="txtMmpNoPemerolehan" class="form-control">
+                        <label for="txtMmpNoPemerolehan" id="lblMmpNoPemerolehan">No Pemerolehan</label>
+                        <p class="font-small text-danger" id="txtMmpNoPemerolehanErr"></p>
+                    </div>
+                    <h6 class="font-small">Gab:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMmpGabYtStatus" name="chkMmpGabYtStatus" value="Y">
+                        <label class="form-check-label" for="chkMmpGabYtStatus">Ya</label>
+                    </div>
+                    <h6 class="font-small mt-3">Status:</h6>
+                    <div class="form-check pl-1">
+                        <input type="checkbox" class="form-check-input" id="chkMmpMataPelajaranStatus" name="chkMmpMataPelajaranStatus" value="Y">
+                        <label class="form-check-label" for="chkMmpMataPelajaranStatus">Aktif</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer flex-center">
+                <button class="btn btn-outline-info waves-effect" data-dismiss="modal"><i class="fas fa-undo-alt ml-1"></i> Keluar</button>
+                <button id="btnMmpSubmit" class="btn btn-info waves-effect"><i class="far fa-paper-plane ml-1"></i> Hantar</button>
+            </div>
+        </div>
+    </div>
+</div>
