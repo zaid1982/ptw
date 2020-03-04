@@ -1,0 +1,115 @@
+
+<section class="section">
+    <div class="z-depth-4 mt-4 mb-5 white">
+        <div class="px-4">
+            <ul class="stepper parallel">
+                <li class="step active">
+                    <div class="step-title waves-effect waves-dark">SECTION 1 - Requisition</div>
+                    <div class="step-new-content">
+                        <form autocomplete="off">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="md-form md-outline col-12 mt-0">
+                                            <input id="txtPtwApplicantName" name="txtPtwApplicantName" type="email" class="form-control validate" required>
+                                            <label for="txtPtwApplicantName">Applicant's Name</label>
+                                        </div>
+                                        <div class="md-form md-outline col-12 mt-0">
+                                            <input id="txtPtwDesignation" name="txtPtwDesignation" type="text" class="form-control validate" required>
+                                            <label for="txtPtwDesignation">Designation</label>
+                                        </div>
+                                        <div class="md-form md-outline col-12 mt-0">
+                                            <input id="txtPtwSectionDivision" name="txtPtwSectionDivision" type="text" class="form-control validate" required>
+                                            <label for="txtPtwSectionDivision">Section / Division</label>
+                                        </div>
+                                        <div class="md-form md-outline col-12 mt-0">
+                                            <input id="txtPtwLocation" name="txtPtwLocation" type="text" class="form-control validate" required>
+                                            <label for="txtPtwLocation">Location</label>
+                                        </div>
+                                        <div class="md-form md-outline col-12 mt-0">
+                                            <input id="txtPtwCompanyName" name="txtPtwCompanyName" type="text" class="form-control validate" required>
+                                            <label for="txtPtwCompanyName">Company Name</label>
+                                        </div>
+                                        <div class="md-form md-outline col-12 mt-0 mb-2">
+                                            <input id="txtPtwSpecificWorksite" name="txtPtwSpecificWorksite" type="text" class="form-control validate" required>
+                                            <label for="txtPtwSpecificWorksite">Specific Worksite</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <div class="md-form md-outline col-12 mt-0">
+                                            <input id="txtPtwStartDate" name="txtPtwStartDate" type="text" class="form-control datepicker">
+                                            <label for="txtPtwStartDate">Start Date</label>
+                                        </div>
+                                        <div class="md-form md-outline col-12 mt-0">
+                                            <input id="txtPtwCompletionDate" name="txtPtwCompletionDate" type="text" class="form-control datepicker">
+                                            <label for="txtPtwCompletionDate">Completion Date</label>
+                                        </div>
+                                    </div>
+                                    <h6 class="font-weight-bold">AREA CLASSIFICATION (Tick appropriate boxes)</h6>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwAreaClassification1">
+                                        <label class="form-check-label" for="chkPtwAreaClassification1">Open Area</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwAreaClassification2">
+                                        <label class="form-check-label" for="chkPtwAreaClassification2">Covered Area / Confined Space</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwAreaClassification3">
+                                        <label class="form-check-label" for="chkPtwAreaClassification3">Wharf Area</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwAreaClassification4">
+                                        <label class="form-check-label" for="chkPtwAreaClassification4">On Board Vessel</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="font-small font-weight-bold">Blanket Permit valid for 7 days only (inclusive Sunday & Public Holiday)</h6>
+                            <div class="row">
+                                <div class="md-form md-outline col-12 mt-3">
+                                    <textarea id="txtPtwWorkDescription" class="md-textarea form-control validate" required rows="3"></textarea>
+                                    <label for="txtPtwWorkDescription">Work Description</label>
+                                </div>
+                                <div class="md-form md-outline col-12 mt-2">
+                                    <textarea id="txtPtwSpecialWorkInstruction" class="md-textarea form-control validate" required rows="3"></textarea>
+                                    <label for="txtPtwSpecialWorkInstruction">Special Work Instruction</label>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="waves-effect waves-dark btn btn-sm btn-primary next-step">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-title waves-effect waves-dark">SECTION 2</div>
+                    <div class="step-new-content">
+                        <form autocomplete="off">
+                            <div class="row">
+                                <div class="md-form col-12 ml-auto">
+                                    <input id="password-parallel" type="password" class="form-control validate" required>
+                                    <label for="password-parallel">Your password</label>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="waves-effect waves-dark btn-sm btn btn-primary next-step">CONTINUE</button>
+                                <button class="waves-effect waves-dark btn-sm btn btn-secondary previous-step">BACK</button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-title waves-effect waves-dark">SECTION 3</div>
+                    <div class="step-new-content">
+                        Finish!
+                        <div class="step-actions">
+                            <button class="waves-effect waves-dark btn-sm  btn btn-primary m-0 mt-4" type="button">SUBMIT</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
