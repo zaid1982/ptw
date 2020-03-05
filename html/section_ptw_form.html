@@ -201,9 +201,73 @@
                                     </div>
                                 </div>
                             </div>
-                            <h6 class="font-small font-weight-bold">C. ADDITIONAL DOCUMENTS REQUIRED TO ACCOMPANY PERMIT TO WORK FORM (Tick appropriate boxes)</h6>
-                            <div class="row mb-4">
-                                <div class="col-md-4">
+                            <h6 class="font-small font-weight-bold mb-3">C. ADDITIONAL DOCUMENTS REQUIRED TO ACCOMPANY PERMIT TO WORK FORM (Tick appropriate boxes)</h6>
+                            <div class="row mb-2">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table id="dtPtwBasicAttach" class="table table-bordered table-hover table-sm display responsive" style="width: 100%; border-spacing: 0">
+                                            <thead>
+                                            <tr class="font-weight-bold blue text-white text-center">
+                                                <th colspan="3">Basic PTW attachment (for All type of Activity)</th>
+                                            </tr>
+                                            <tr class="font-weight-bold blue lighten-3 text-white text-center">
+                                                <th style="text-align: center">Title</th>
+                                                <th style="text-align: center; width: 45%">Uploaded Files</th>
+                                                <th style="text-align: center; width: 12%"></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Risk Assessment / Job Safety Analysis (JSA)</td>
+                                                <td>risk_assessment.pdf, job_safety_analysis.pdf</td>
+                                                <td><a><i class="far fa-file-pdf lnkPtwBasicAttachAdd" id="lnkPtwBasicAttachAdd1" data-toggle="tooltip" data-placement="top" title="Add Attachment"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Work Method Statement</td>
+                                                <td></td>
+                                                <td><a><i class="far fa-file-pdf lnkPtwBasicAttachAdd" id="lnkPtwBasicAttachAdd2" data-toggle="tooltip" data-placement="top" title="Add Attachment"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Certificates</td>
+                                                <td></td>
+                                                <td><a><i class="far fa-file-pdf lnkPtwBasicAttachAdd" id="lnkPtwBasicAttachAdd3" data-toggle="tooltip" data-placement="top" title="Add Attachment"></i></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table id="dtPtwCriticalAttach" class="table table-bordered table-hover table-sm display responsive" style="width: 100%; border-spacing: 0">
+                                            <thead>
+                                            <tr class="font-weight-bold blue text-white text-center">
+                                                <th colspan="3">Basic PTW attachment (for All type of Activity)</th>
+                                            </tr>
+                                            <tr class="font-weight-bold blue lighten-3 text-white text-center">
+                                                <th style="text-align: center">Title</th>
+                                                <th style="text-align: center; width: 45%">Uploaded Files</th>
+                                                <th style="text-align: center; width: 12%"></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Operation Procedure</td>
+                                                <td>operation_procedure.pdf</td>
+                                                <td><a><i class="far fa-file-pdf lnkPtwCriticalAttachAdd" id="lnkPtwCriticalAttachAdd1" data-toggle="tooltip" data-placement="top" title="Add Attachment"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>LogOut/TagOut Signature</td>
+                                                <td></td>
+                                                <td><a><i class="far fa-file-pdf lnkPtwCriticalAttachAdd" id="lnkPtwCriticalAttachAdd2" data-toggle="tooltip" data-placement="top" title="Add Attachment"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Others</td>
+                                                <td></td>
+                                                <td><a><i class="far fa-file-pdf lnkPtwCriticalAttachAdd" id="lnkPtwCriticalAttachAdd3" data-toggle="tooltip" data-placement="top" title="Add Attachment"></i></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                             <div class="step-actions">
@@ -214,7 +278,63 @@
                     </div>
                 </li>
                 <li class="step">
-                    <div class="step-title waves-effect waves-dark">SECTION 3</div>
+                    <div class="step-title waves-effect waves-dark">SECTION 3 - Worksite Preparation / Precautions</div>
+                    <div class="step-new-content">
+                        <form autocomplete="off">
+                            <h6 class="font-small font-weight-bold">A. BASIC REQUIREMENT (Tick appropriate boxes)</h6>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement1">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement1">Adequate/Warning signs</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement2">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement2">Area barricaded</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement3">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement3">Scaffold required</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement4">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement4">Toolbox meeting</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement5">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement5">Falling hazards identified & controlled</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement6">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement6">Adequate fire extinguishers</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement7">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement7">Lighting (Normal)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement8">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement8">JSA briefing</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkPtwBasicRequirement15">
+                                        <label class="form-check-label" for="chkPtwBasicRequirement15">Instrinsically safe tools</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="waves-effect waves-dark btn-sm btn btn-primary next-step">CONTINUE</button>
+                                <button class="waves-effect waves-dark btn-sm btn btn-secondary previous-step">BACK</button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-title waves-effect waves-dark">SECTION 8</div>
                     <div class="step-new-content">
                         Finish!
                         <div class="step-actions">
