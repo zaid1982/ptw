@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="980b5f36-959f-4a06-aeb4-8927eb7ec96a" name="Default Changelist" comment="" />
+    <list default="true" id="980b5f36-959f-4a06-aeb4-8927eb7ec96a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/pages/main_home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nav_left.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nav_left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nav_top.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nav_top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icon/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,11 +29,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WcC9hmgnLIRR3NBO6TKU3R1YLM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -36,6 +54,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\php\ptw\js\pages" />
+      <recent name="C:\Users\User\Documents\php\ptw" />
       <recent name="C:\Users\User\Documents\php\spa" />
     </key>
   </component>
@@ -50,6 +70,10 @@
       <option name="presentableId" value="Default" />
       <updated>1579439346709</updated>
       <workItem from="1579439347937" duration="22032000" />
+      <workItem from="1591125903732" duration="202000" />
+      <workItem from="1591126114043" duration="2710000" />
+      <workItem from="1591200036561" duration="16000" />
+      <workItem from="1592812721736" duration="4488000" />
     </task>
     <servers />
   </component>
@@ -57,9 +81,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583337645490">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591200038000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583337645490" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591200038000" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592813353989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592813353989" />
   </component>
 </project>
