@@ -31,7 +31,7 @@ function MainHome() {
         self.generateChartWoByCategory();
         self.generateChartWoByType();
         self.generateChartWoTop5Execute();
-        self.generateChartWoBottom5Execute();
+       // self.generateChartWoBottom5Execute();
         //self.runChart();
     };
 
@@ -273,7 +273,7 @@ function MainHome() {
                 type: 'pie'
             },
             title: {
-                text: 'ATAR'
+                text: 'Action Tracking & Reporting'
             },
             subtitle: {
                 text: 'ATAR by Status'
@@ -548,10 +548,10 @@ function MainHome() {
                 type: 'bar'
             },
             title: {
-                text: 'Top 5 Executor'
+                text: 'Top 5 Submission'
             },
             subtitle: {
-                text: 'Total Work Order Executed'
+                text: 'The Most Submission U See U Act'
             },
             xAxis: {
                 categories: ['Mohd Shafari Bin Saharuddin', 'Nabil Fikri bin Mahat', 'Azman Redza bin Badzly', 'Izzudin bin Lee', 'Shifaa bte Harun'],
@@ -562,7 +562,7 @@ function MainHome() {
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Total WO Executed',
+                    text: 'Total Submission',
                     align: 'high'
                 },
                 labels: {
@@ -606,10 +606,10 @@ function MainHome() {
                 type: 'bar'
             },
             title: {
-                text: 'Top 5 Executor'
+                text: 'Bottom 5 Executor'
             },
             subtitle: {
-                text: 'Total Work Order Executed'
+                text: 'The Most Submission U See U Act'
             },
             xAxis: {
                 categories: ['Mohd Shafari Bin Saharuddin', 'Nabil Fikri bin Mahat', 'Azman Redza bin Badzly', 'Izzudin bin Lee', 'Shifaa bte Harun'],
